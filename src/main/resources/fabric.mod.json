@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "versionjoin",
+  "version": "${version}",
+  "name": "VersionJoin",
+  "description": "Control the version your client reports to servers. For real cross-version play use a protocol translator like ViaFabric.",
+  "authors": [
+    "EnderDevelopment"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.enderversion.versionjoin.VersionJoinClient"
+    ]
+  },
+  "mixins": [
+    "versionjoin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
